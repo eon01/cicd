@@ -1,4 +1,5 @@
-replicaCount: 2
+# change the replica count to 3 here
+replicaCount: 3
 image:
   repository: eon01/cicd
   pullPolicy: IfNotPresent
@@ -24,6 +25,8 @@ ingress:
         - path: /tasks
           pathType: Prefix
   tls: []
+httpRoute:
+  enabled: false
 autoscaling:
   enabled: false
   minReplicas: 1
