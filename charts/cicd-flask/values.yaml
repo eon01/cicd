@@ -24,6 +24,8 @@ ingress:
         - path: /tasks
           pathType: Prefix
   tls: []
+httpRoute:
+  enabled: false
 autoscaling:
   enabled: false
   minReplicas: 1
